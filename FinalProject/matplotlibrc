@@ -321,10 +321,10 @@ backend      : TkAgg
                                          # at least this number of significant
                                          # digits from tick labels.
 
-# axes.spines.left   : True   # display axis spines
-# axes.spines.bottom : True
-axes.spines.top    : False
-axes.spines.right  : False
+axes.spines.left   : True   # display axis spines
+axes.spines.bottom : True
+axes.spines.top    : True
+axes.spines.right  : True
 
 
 #axes.unicode_minus  : True    # use unicode for the minus symbol
