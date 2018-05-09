@@ -51,8 +51,10 @@ predcart <- predict(train.cart.st, newdata = test, type = "class")
 table(test$MidPrice_Moves, predcart)
 
 #random forest 88%
-#0  1  2 
-#2 11 37 
+#    0  1  2 
+#0   2  0  0
+#1   0  7  1
+#2   1  4  35
 mod.rf <- randomForest(MidPrice_Moves~.-Time_stamp-Time-Label, data = train, mtry = 5, nodesize = 5, ntree = 500)
 pred.rf <- predict(mod.rf, newdata = test) 
 
